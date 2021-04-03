@@ -1,0 +1,17 @@
+#form {
+    margin-top: 0.9rem;
+}
+#form input {
+    margin: 0 1rem;
+    text-align: center;
+    line-height: 3vw;
+    font-size: 1rem;
+    border: solid 0.05rem #ccc;
+    outline: none;
+    width: 10%;
+    transition: all .2s ease-in-out;
+}
+#form input:focus {
+    border-color: #ff7900;
+    box-shadow: 0 0 0.05rem #ff7900 ;
+}
