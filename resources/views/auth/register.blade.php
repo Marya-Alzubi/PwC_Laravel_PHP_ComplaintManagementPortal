@@ -1,5 +1,5 @@
 @extends('layouts.auth')
-@section('title') Sign in  @endsection
+@section('title') Sign up  @endsection
 @section('main')
     <section class="wizard-section">
         <div class="form-wizard">

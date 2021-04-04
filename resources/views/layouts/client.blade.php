@@ -5,6 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Complaint ">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="complaint">
+    <meta property="og:description" content="  complaint management portal - PwC  ">
+    <meta name="keywords" content=" complaint management portal - PwC ">
+    <meta name="author" content=" Marya Alzubi ">
     <link rel="preload" href="{{asset('assets/boosted/dist/fonts/HelvNeue55_W1G.woff2')}}" as="font"
           type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="{{asset('assets/boosted/dist/fonts/HelvNeue75_W1G.woff2')}}" as="font"
@@ -17,6 +26,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/boosted/dist/img/favicon.png')}}" />
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     @yield('links')

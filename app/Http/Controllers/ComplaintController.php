@@ -131,7 +131,7 @@ class ComplaintController extends Controller
                 ->subject('PwC ');
             $message->from('marya.testing@gmail.com','PwC Updated Status Mail');
         });
-        return redirect(route('admin.all.complaints'))->with('status_store', 'tht updated status has been sent to user');
+        return redirect(route('admin.all.complaints'))->with('status_store', 'tht updated status has been sent to user by email');
     }
 
     /**

@@ -31,9 +31,21 @@
                                     </span>
                         @enderror
                     </div>
-                    <div class="col-md-5 mb-3">
+{{--                    <div class="form-group row " style="float: left;">--}}
+{{--                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>--}}
+
+{{--                        <label class="form-check-label" for="remember">--}}
+{{--                            {{ __('Remember Me') }}--}}
+{{--                        </label>--}}
+{{--                    </div>--}}
+                    <div class="col-md-5 ">
                         <button class="btn btn-primary  btn-lg btn-block" id="next1" type="submit" >Login
                         </button>
+                        @if (Route::has('password.request'))
+                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                                {{ __('Forgot Your Password?') }}
+                            </a>
+                        @endif
                     </div>
 
                     <div class="col-md-5 mb-3">

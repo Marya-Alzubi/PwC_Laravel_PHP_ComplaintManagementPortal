@@ -20,14 +20,13 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="description"
-          content="Frest admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+          content="amin dashboard - complant management portal - PwC ">
     <meta name="keywords"
-          content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="PIXINVENT">
+          content="admin dashboard - complaint management portal - PwC ">
+    <meta name="author" content="Marya Alzubi">
     <title> @yield('title') </title>
     <link rel="apple-touch-icon" href="{{asset('admin-assets/images/ico/apple-icon-120.html')}}">
-    <link rel="shortcut icon" type="image/x-icon"
-          href="https://www.pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/app-assets/images/ico/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('admin-assets/images/logo/logo.svg')}}" />
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700"
           rel="stylesheet">
 
@@ -58,10 +57,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <link rel="stylesheet" type="text/css" href="{{asset('admin-assets/css/pages/dashboard-ecommerce.min.css')}}">
     <!-- END: Page CSS-->
 
-    <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css')}}">
-    <!-- END: Custom CSS-->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.1/chart.min.js" integrity="sha512-2uu1jrAmW1A+SMwih5DAPqzFS2PI+OPw79OVLS4NJ6jGHQ/GmIVDDlWwz4KLO8DnoUmYdU8hTtFcp8je6zxbCg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <!-- END: Head-->
 
@@ -157,6 +154,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                                        data-icon="envelope-pull"></i><span
                             class="menu-title text-truncate" data-i18n="Email"> Complaints </span></a>
                 </li>
+                @if()
                 <li class=" nav-item"><a href="/admins"><i class="menu-livicon" data-icon="envelope-pull"></i><span
                             class="menu-title text-truncate" data-i18n="Email">Admins</span></a>
                 </li>
