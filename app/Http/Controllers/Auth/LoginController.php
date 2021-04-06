@@ -20,7 +20,7 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
-
+    // using the built in authentication
     use AuthenticatesUsers;
 
     /**
@@ -35,16 +35,18 @@ class LoginController extends Controller
      *
      * @return void
      */
+    // user and admin auth middleware
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
         $this->middleware('guest:admin')->except('adminLogout');
     }
+    // show the admin login form
     public function showAdminLoginForm()
     {
         return view('auth.adminLogin');
     }
-
+    // check the attempt of admin login 
     public function adminLogin(Request $request)
     {
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
@@ -53,6 +55,7 @@ class LoginController extends Controller
         }
         return back()->withInput($request->only('email', 'remember'));
     }
+    // admin logout function
     public function adminLogout(Request $request) {
         Auth::guard('admin')->logout();
         return redirect(route('admin.login') );
