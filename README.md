@@ -3,7 +3,7 @@ An multi authintication website which was made using **Laravel 7** & **Bootstrap
 
 The website includes a **Public Website** for users to let them register and create a complaints & Admin Dashboard for statistics and filtering the requested complaints.
 
-## The Public Website
+## The Public Website images:
 
 **user home page**
 ![PwC-PublicWebsite](https://user-images.githubusercontent.com/71829413/113707390-81408380-96e8-11eb-9164-ca701f3edaf3.PNG)
@@ -17,7 +17,7 @@ The website includes a **Public Website** for users to let them register and cre
 
 
 
-## The Admin Dashboard
+## The Admin Dashboard images:
 
 **Admin Dashboard**
 ![PwC-AdminDashboard](https://user-images.githubusercontent.com/71829413/113705582-476e7d80-96e6-11eb-8b13-e6138154960f.PNG)
