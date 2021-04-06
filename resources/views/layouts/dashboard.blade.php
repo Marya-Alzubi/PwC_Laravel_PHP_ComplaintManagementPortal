@@ -84,17 +84,17 @@ License: You must have a valid license purchased only from themeforest(the above
                     <ul class="nav navbar-nav float-right">
                         <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i
                                     class="ficon bx bx-fullscreen"></i></a></li>
-{{--                        <li class="dropdown dropdown-language nav-item">--}}
-{{--                            <a class="dropdown-item" href="{{ route('admin.logout') }}"--}}
-{{--                               onclick="event.preventDefault();--}}
-{{--                                                     document.getElementById('logout-form').submit();">--}}
-{{--                                logout--}}
-{{--                            </a>--}}
+                        <li class="dropdown dropdown-language nav-item">
+                            <a class="dropdown-item" href="{{ route('admin.logout') }}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                logout
+                            </a>
 
-{{--                            <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" class="d-none">--}}
-{{--                                @csrf--}}
-{{--                            </form>--}}
-{{--                        </li>--}}
+                            <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </li>-
                     </ul>
                 </div>
             </div>
