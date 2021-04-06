@@ -36,7 +36,9 @@ $ cd PwC_complaint_management_portal
 $ composer install
 ```
 3. **Create and setup .env file:**
+```
 make a copy of .env.example and rename to .env
+```
 4. **put mail credentials in .env file**
 
 5. **Migrate and insert records**
