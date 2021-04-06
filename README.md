@@ -29,7 +29,7 @@ The website includes a **Public Website** for users to let them register and cre
 ![PwC-AdminDashboard-email-update-status](https://user-images.githubusercontent.com/71829413/113707151-29098180-96e8-11eb-9c6b-f3022b1bce65.PNG)
 
 
-## Directions:
+## Directions to use this code:
 1. **clone the repository**
 2. **Install composer packages:**
 ```
