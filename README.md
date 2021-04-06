@@ -1,7 +1,7 @@
-## PwC Complaint Management Portal
-An multi authintication website which was made using **Laravel 7** & **Bootstrap** && **JavaScript** connecting it with MySQL database.
+# PwC Complaint Management Portal
+An multi authintication website which was made using **Laravel 7** & **Bootstrap** & **JavaScript** connecting it with MySQL database.
 
-The website includes a **Public Website** for users to let them register and create a complaints & Admin Dashboard for statistics and filtering the requested complaints.
+The website includes a **Public Website** for users to let them register and create a complaints & **Admin Dashboard** for statistics and filtering the requested complaints.
 
 ## The Public Website images:
 
@@ -40,11 +40,36 @@ $ composer install
 ```
 make a copy of .env.example and rename to .env
 ```
-4. **put mail credentials in .env file**
-
-5. **Migrate and insert records**
+4. **open your .env file which is located in your root directory of our application and checkout for this settings:**
+```
+MAIL_DRIVER=smtp
+MAIL_HOST=mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+```
+5. **Now edit the details above(step4) to put your mail credentials in .env as follows: **
+```
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.googlemail.com
+MAIL_PORT=465
+MAIL_USERNAME=ENTER_YOUR_EMAIL_ADDRESS(GMAIL)
+MAIL_PASSWORD=ENTER_YOUR_GMAIL_PASSWORD
+MAIL_ENCRYPTION=ssl
+```
+6. **Configure your Google Account:**
+> Login to your Google Email Account and click on Google Account Button. This button is display when you click on the profile picture in your Gmail Dashboard as shown.
+> Once you are on My Account Page then click on Security and scroll down to the bottom and you will find ‘Less secure app access’ settings. Click on the radio button to set it ON.
+7. **Migrate and insert records**
 ```
 $ php artisan migrate
 ```
-6. **Happy Coding !!**
+8. **Happy Coding !!**
 
+
+# Future Plans:
+
+- creating roles and priviliges for admins.
+- toggle to change the language.
+- edit your profile page for user and admin.
