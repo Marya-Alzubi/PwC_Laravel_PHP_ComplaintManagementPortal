@@ -54,7 +54,7 @@ class AdminController extends Controller
      * @param  \App\Admin  $admin
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    // update the spacified admin rerord in database
+    // update the spacified admin rerord in database with a status_update session which works with sweet alert 
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -76,7 +76,7 @@ class AdminController extends Controller
      * @param  \App\Admin  $admin
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    // delete the spacified admin rerord from database
+    // delete the spacified admin rerord from database with a status_destroy session which works with sweet alert 
     public function destroy($id)
     {
         db::table('admins')->where('id', $id)->delete();
