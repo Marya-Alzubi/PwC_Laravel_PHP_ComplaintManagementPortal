@@ -9,7 +9,7 @@ The website includes a **Public Website** for users to let them register and cre
 ![PwC-PublicWebsite](https://user-images.githubusercontent.com/71829413/113707390-81408380-96e8-11eb-9164-ca701f3edaf3.PNG)
 
 
-**user copmlaint form**
+**user complaint form**
 ![PwC-PublicWebsite-form](https://user-images.githubusercontent.com/71829413/113706340-3eca7700-96e7-11eb-9d5d-8a6766bffa44.PNG)
 
 **user inbox mail after request a complaint**
