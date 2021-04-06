@@ -49,7 +49,7 @@ MAIL_USERNAME=null
 MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
 ```
-5. **Now edit the details above(step4) to put your mail credentials in .env as follows: **
+5. **Now edit the details above(step4) to put your mail credentials in .env as follows:**
 ```
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.googlemail.com
