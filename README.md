@@ -3,16 +3,29 @@ An multi authintication website which was made using **Laravel 7** & **Bootstrap
 
 The website includes a **Public Website** for users to let them register and create a complaints & Admin Dashboard for statistics and filtering the requested complaints.
 
-**The Public Website**
+## The Public Website
+
+**user home page**
 ![PwC-PublicWebsite](https://user-images.githubusercontent.com/71829413/113705445-1beb9300-96e6-11eb-8fea-6deeeae81f42.PNG)
+
+**user copmlaint form**
 ![PwC-PublicWebsite-form](https://user-images.githubusercontent.com/71829413/113706340-3eca7700-96e7-11eb-9d5d-8a6766bffa44.PNG)
+
+**user inbox mail after request a complaint**
 ![PwC-PublicWebsiteemail](https://user-images.githubusercontent.com/71829413/113706352-42f69480-96e7-11eb-86c5-c0943d5e2c6a.PNG)
 
 
 
-**The Admin Dashboard**
+## The Admin Dashboard
+
+**Admin Dashboard**
 ![PwC-AdminDashboard](https://user-images.githubusercontent.com/71829413/113705582-476e7d80-96e6-11eb-8b13-e6138154960f.PNG)
+
+**list of requested complaints**
 ![PwC-AdminDashboard-filtering](https://user-images.githubusercontent.com/71829413/113705687-666d0f80-96e6-11eb-9fd6-b6b036a6fe65.PNG)
+
+**user inbox mail after admin take an action for his complaint**
+![PwC-AdminDashboard-email-update-status](https://user-images.githubusercontent.com/71829413/113707151-29098180-96e8-11eb-9c6b-f3022b1bce65.PNG)
 
 
 ## Directions:
