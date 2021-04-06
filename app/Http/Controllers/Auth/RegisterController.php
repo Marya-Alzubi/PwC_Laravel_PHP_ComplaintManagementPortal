@@ -30,9 +30,10 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('showAdminRegisterForm','createAdmin');
+        // admin auth middleware
         $this->middleware('auth:admin')->only('showAdminRegisterForm','createAdmin');
     }
+    // show the user registration page
     public function index()
     {
         return view('auth.register');
@@ -43,6 +44,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+    // validation before creating it into database
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -58,6 +60,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+    // creating a user record into database
     protected function create(array $data)
     {
         return User::create([
@@ -66,11 +69,12 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
-
+    // show the admin registration page
     public function showAdminRegisterForm()
     {
         return view('auth.adminRegister');
     }
+    // creating an admin record into database
     protected function createAdmin(Request $request)
     {
         $this->validator($request->all())->validate();
@@ -79,6 +83,6 @@ class RegisterController extends Controller
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
         ]);
-        return redirect()->intended('/admins' );
+        return redirect('/admins');
     }
 }
