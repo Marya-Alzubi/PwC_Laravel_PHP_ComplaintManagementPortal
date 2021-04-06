@@ -1,5 +1,5 @@
 ## PwC Complaint Management Portal
-An multi authintication website which was made using **Laravel 7** & **Bootstrap** && **JavaScript**.
+An multi authintication website which was made using **Laravel 7** & **Bootstrap** && **JavaScript** connecting it with MySQL database.
 
 The website includes a **Public Website** for users to let them register and create a complaints & Admin Dashboard for statistics and filtering the requested complaints.
 
