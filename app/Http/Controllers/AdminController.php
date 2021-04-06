@@ -14,9 +14,11 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
+    // admin auth middlewarw
     public function __construct(){
         $this->middleware('auth:admin');
     }
+    // show the admins table
     public function index()
     {
         $admins = Admin::orderByDesc('id')->get();
@@ -28,39 +30,18 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
+    // show the admins table after storing a record into database
     public function create()
     {
         return redirect('/admins');
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Admin  $admin
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Admin $admin)
-    {
-        //
-    }
-
     /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Admin  $admin
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
+    // fetch the spacified admin rerord from database
     public function edit(Admin $admin)
     {
         return view('admin.admin_update' , compact('admin'));
@@ -73,7 +54,7 @@ class AdminController extends Controller
      * @param  \App\Admin  $admin
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    // Admin $admin
+    // update the spacified admin rerord in database
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -95,6 +76,7 @@ class AdminController extends Controller
      * @param  \App\Admin  $admin
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
+    // delete the spacified admin rerord from database
     public function destroy($id)
     {
         db::table('admins')->where('id', $id)->delete();
